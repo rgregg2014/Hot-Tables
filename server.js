@@ -1,6 +1,7 @@
-// -----------Dobbs-------------
 const express = require("express");
 const path = require("path");
+const customers = require("./public/assets/customers");
+const waitList = require("./public/assets/waitList");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -21,6 +22,7 @@ app.get("/resrve", (req, res) => res.send("How can I help you?"));
 app.listen(PORT, () =>
   console.log(`App listening on PORT http://localhost:${PORT}`)
 );
+// -----------Dobbs-------------
 
 // -----------Dobbs END------------
 // -----------Rachel---------------

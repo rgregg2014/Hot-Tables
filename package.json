@@ -1,0 +1,27 @@
+{
+  "name": "Hot-Tables",
+  "version": "1.0.0",
+  "description": "* Description: Basic app demonstrating Node and Express with vanilla javascript. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list. * Live Demo: <https://hot-restaurant-fsf.herokuapp.com/>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgregg2014/Hot-Tables.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgregg2014/Hot-Tables/issues"
+  },
+  "homepage": "https://github.com/rgregg2014/Hot-Tables#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

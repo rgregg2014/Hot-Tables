@@ -2,7 +2,7 @@
 
 ## Description
 
-Hot Tables is a restaurant reservation system built in HTML, CSS, and JavaScript. It uses Express to build a back end server to hold reservations.
+Hot Tables is a restaurant reservation system built in HTML, CSS, and JavaScript. It uses Express to build a back end server to hold reservations. Styling backed up by Bootstrap.
 
 ## License
 

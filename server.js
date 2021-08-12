@@ -9,15 +9,19 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// app.get("/", (req, res) => res.sendFile(path.join(__dirname, "index.html")));
+app.get("/", (req, res) => res.sendFile(path.join(__dirname, "index.html")));
 
-app.get("/", (req, res) => res.send("Welcome to the home page"));
+app.get("/reserve", (req, res) =>
+  res.sendFile(path.join(__dirname, "reserve.html"))
+);
 
-app.get("/resrve", (req, res) => res.send("How can I help you?"));
+app.get("/tables", (req, res) =>
+  res.sendFile(path.join(__dirname, "tables.html"))
+);
 
-// app.get("/resrve", (req, res) =>
-//   res.sendFile(path.join(__dirname, "resrve.html"))
-// );
+app.get("/api/tables", (req, res) => res.json(customers));
+
+app.get("/api/waitlist", (req, res) => res.json(waitList));
 
 app.listen(PORT, () =>
   console.log(`App listening on PORT http://localhost:${PORT}`)

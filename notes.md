@@ -38,13 +38,15 @@ Users input data into the form and hit submit. Their inputs are stored in a back
   
 ## Contributing
   
+Current contributers to this project include
+
 Any developer can contribute on this project. Feel free to email me at the address listed below.
-  
+
 ## Testing
-  
+
 There are no tests associated with this project.
-  
+
 ## Questions
-  
+
 If you have any questions, please email me at rgregg2014@gmail.com.
 Or, you can find me on [Github](https://www.github.com/rgregg2014).

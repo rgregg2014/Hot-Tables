@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link the bootstrap  -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link the bootstrap  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <title>Reservations</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <!-- H1 and H2 -->
+      <h1 class="text-center">Reservations</h1>
+      <h2 class="text-center">Reserve Your Table Now.</h2>
+      <br>
 
-    <title>Reservations</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <!-- H1 and H2 -->
-        <h1 class="text-center">Reservations</h1>
-        <h2 class="text-center">Reserve Your Table Now.</h2>
-        <br />
+      <div class="text-center">
+        <!-- Buttons to book the reservation-->
+        <!-- view tables -->
+        <a href="/tables"><button type="button" class="btn btn-lg btn-primary">View Tables</button></a>
+        <!-- Return Home -->
+        <a href=""><button type="button" class="btn btn-lg btn-default">Return To Home Page</button></a>
 
-        <div class="text-center">
-          <!-- Buttons to book the reservation-->
-          <!-- view tables -->
-          <a href="/tables"
-            ><button type="button" class="btn btn-lg btn-primary">
-              View Tables
-            </button></a
-          >
-          <!-- Return Home -->
-          <a href=""
-            ><button type="button" class="btn btn-lg btn-default">
-              Return To Home Page
-            </button></a
-          >
-        </div>
       </div>
-<<<<<<< HEAD
 
     </div>
     <!-- panel for the reservations and their table -->
@@ -52,15 +37,44 @@
         <div class="panel-body">
               <form role="form">
                 <div class="form-froup">
-                  <label for="reserve_name"></label>
+                  <!-- Name -->
+                  <label for="reserve_name">Name</label>
+                  <input type="text" class="form-control" id="reserve_name" name="name">
                 </div>
+                <!-- Phone -->
+                  <div class="form-froup">
+                    <label for="reserve_name">Phone Number</label>
+                    <input type="text" class="form-control" id="reserve_phone" name="phone">
+                  </div>
+                    <div class="form-froup">
+                      <!-- email -->
+                      <label for="reserve_name">Email</label>
+                      <input type="text" class="form-control" id="reserve_email" name="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="reserve_party">How many people will be in your party?</label>
+                      <input type="integer" class="form-control" id="reserve_party" name="party">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="reserve_partyID">Party ID</label>
+                      <input type="text" class="form-control" id="reserve_partyID" name="id">
+
+                    </div>
+                    <button type="submit" class="btn btn-primary submit">Submit</button>
+              
+              
               </form>
         </div>
       </div>
 
-=======
-      <div class="row"></div>
->>>>>>> dc2fa879b82504970a0477ce9a0b97c5695a4456
     </div>
-  </body>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p><a href="">API Tabe Link</a> | <a href="">API waiting List</a></p>
+    </div>
+  </footer>
+  
+</body>
 </html>

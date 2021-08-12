@@ -1,10 +1,3 @@
-## Workflow Breakdown
-
-- Anne: Creating visuals for homepage, reservation form; basic server
-- James:
-- Duncan:
-- Rachel:
-
 # Hot Tables
 
 ## Description
@@ -38,7 +31,7 @@ Users input data into the form and hit submit. Their inputs are stored in a back
   
 ## Contributing
   
-Current contributers to this project include
+Current contributers to this project include [James](https://github.com/Dobbs96), [Anne](https://github.com/victoire1806), and [Duncan.](https://github.com/DuncanByrne)
 
 Any developer can contribute on this project. Feel free to email me at the address listed below.
 

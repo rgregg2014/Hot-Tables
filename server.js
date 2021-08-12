@@ -27,7 +27,7 @@ app.post("/reserve", (req, res) => {
     res.json({ msg: "Sorry we are full, but you are on the wait list." });
     return waitList.push(newCustomer);
   } else {
-    res.redirect("/");
+    res.redirect(req.get("referer"));
     return customers.push(newCustomer);
   }
 });

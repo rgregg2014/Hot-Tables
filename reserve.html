@@ -33,14 +33,84 @@
             </button></a
           >
           <!-- Return Home -->
-          <a href="/"
+          <a href=""
             ><button type="button" class="btn btn-lg btn-default">
               Return To Home Page
             </button></a
           >
         </div>
       </div>
-      <div class="row"></div>
+      <!-- panel for the reservations and their table -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-default">
+            <h4 class="panel-title">Reseverved Table</h4>
+          </div>
+          <div class="panel-body">
+            <form role="form">
+              <div class="form-froup">
+                <!-- Name -->
+                <label for="reserve_name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="reserve_name"
+                  name="name"
+                />
+              </div>
+              <!-- Phone -->
+              <div class="form-froup">
+                <label for="reserve_name">Phone Number</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="reserve_phone"
+                  name="phone"
+                />
+              </div>
+              <div class="form-froup">
+                <!-- email -->
+                <label for="reserve_name">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="reserve_email"
+                  name="email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="reserve_party"
+                  >How many people will be in your party?</label
+                >
+                <input
+                  type="integer"
+                  class="form-control"
+                  id="reserve_party"
+                  name="party"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="reserve_partyID">Party ID</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="reserve_partyID"
+                  name="id"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary submit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="">API Tabe Link</a> | <a href="">API waiting List</a></p>
+      </div>
+    </footer>
   </body>
 </html>

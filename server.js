@@ -15,6 +15,22 @@ app.get("/reserve", (req, res) =>
   res.sendFile(path.join(__dirname, "reserve.html"))
 );
 
+app.post("/reserve", (req, res) => {
+  const newCustomer = {
+    name: req.body.name,
+    phoneNumber: req.body.phoneNumber,
+    email: req.body.email,
+    party: req.body.party,
+    id: req.body.id,
+  };
+  if (customers.length >= 5) {
+    res.json({ msg: "Sorry we are full, but you are on the wait list." });
+    return waitList.push(newCustomer);
+  } else {
+    return customers.push(newCustomer);
+  }
+});
+
 app.get("/tables", (req, res) =>
   res.sendFile(path.join(__dirname, "tables.html"))
 );

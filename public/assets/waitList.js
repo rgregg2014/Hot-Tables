@@ -1,9 +1,2 @@
-const waitList = [
-  {
-    name: "jane Doe",
-    phoneNumber: 5555555555,
-    email: "janeDoe@gmail.com",
-    id: 7,
-  },
-];
+const waitList = [];
 module.exports = waitList;
